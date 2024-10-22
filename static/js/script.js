@@ -18,7 +18,9 @@ let attempts = defaultAttempts
  * @returns random int value between the given interval
  */
 function getRandomInt(min = 1, max = 10) {
-    return Math.floor(Math.random() * (max - min)) + min; 
+    let myNum = Math.floor(Math.random() * (max - min)) + min;
+    console.log(myNum)
+    return myNum 
 }
 
 function processHints(goal, selectedVal) {
